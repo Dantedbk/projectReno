@@ -61,7 +61,7 @@ const CodeEditor = () => {
           onChange={(newValue) => setValue(newValue)}
         />
       <div className="exec-container">
-          <button className="button btn-exec" disabled={isLoading} onClick={runCode} > {isLoading ? 'reza...' : 'Ejecutar'} </button>
+          <button className="button btn-exec" disabled={isLoading} onClick={runCode} > {isLoading ? '...' : 'Ejecutar'} </button>
           </div>
         </div>
 

@@ -18,8 +18,10 @@ const LanguageSelector = ({ language, onSelect }) => {
 
   return (
     <>
+    
       <button className="button lang-select" onClick={toggleMenu}>
-        {language}
+        <b>Lenguaje: </b>
+        {'\u00A0'+ language}
       </button>
       {isMenuOpen && (
         <div className="menu">

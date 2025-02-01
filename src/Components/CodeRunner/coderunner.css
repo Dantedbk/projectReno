@@ -68,12 +68,21 @@
     height: 2vw;
     border: none;
     background: transparent;
-    color: white;
-    background: #ffffff70;
-    color: black;
+    background: black;
+    color: #b1b1b1;
     /* letter-spacing: 2px; */
     font-weight: 500;
     font-size: 1rem;
+    letter-spacing: 5px;
+    transition: 0.5s ease-in-out;
+
+  }
+  .btn-exec:hover{
+    background: rgba(194, 194, 194, 0.759);
+    color: black;
+    transition: 0.2s ease-in-out;
+    letter-spacing: 7px;
+
   }
   .output-box{
     padding:30px
@@ -98,6 +107,8 @@
     border-bottom: 1px solid #292929;
     display: flex;
     height: 5vh;
+    margin-left: 1vw;
+    width: 100%;
   }
   .monaco-editor{
     min-height: 20vw!important
@@ -116,7 +127,6 @@
 .mid-col{
   width: 50%;
   height: 85vh;
-  overflow: hidden;
 }
 
 .btn-exec{
@@ -139,4 +149,47 @@
 
 .editor-container section{
   height: 75vh;
+}
+
+.monaco-scrollable-element>.visible{
+  background-color: black!important ;
+  width: 10px!important;
+  transition: 0.5s ease-in-out;
+}
+
+.monaco-scrollable-element>.invisible.fade {
+  background-color: black!important ; 
+  width: 10px!important ;
+  transition: 0.5s ease-in-out;
+
+}
+
+.monaco-scrollable-element>.scrollbar>.scra{
+  background-color: black!important;
+  width: 5px!important;
+  transition: 0.5s ease-in-out;
+}
+
+
+.monaco-scrollable-element>.scrollbar>.slider {
+  background:rgba(255, 255, 255, 0.604)!important;
+  width:5px!important;
+  /* margin:auto!important; */
+  border-radius: 20px!important;
+
+}
+
+.monaco-scrollable-element>.scrollbar>.slider:hover {
+  background:rgba(255, 255, 255, 0.604)!important;
+  width:5px!important;
+  /* margin:auto!important; */
+  border-radius: 20px!important;
+
+}
+
+.monaco-scrollable-element>.scrollbar>.slider.active {
+  background:rgba(255, 255, 255, 0.604)!important;
+  width:5px!important;
+  /* margin:auto!important; */
+  border-radius: 20px!important;
 }
