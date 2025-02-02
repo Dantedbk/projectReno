@@ -12,7 +12,7 @@ const Output = ({ output,isError }) => {
           ? output.map((line, index) => (
             <div className="output-text" key={index}>{line}</div>
           ))
-          : '.. escribe un código q devuelva los 10 primeros numeros de fibonacci'}
+          : 'Imprime los 10 primeros numeros de fibonacci ->>'}
       </div>
     </>
   );
